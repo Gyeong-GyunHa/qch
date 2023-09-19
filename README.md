@@ -57,6 +57,11 @@ The incidence list of a directed hypergraph
 The local directed quad clustering coefficient vector
 
 
+## Reference
+
+
+Gyeong-Gyun Ha, KCL, 2023
+
 
 
 
