@@ -45,6 +45,10 @@ The local quad clustering coefficient vector
 ```
 
 This code also supports parallel computation using openmp environment.
+```zsh
+> gfortran -
+```
+
 Once the application has been compiled you can run it using the following command:
 ```zsh
 > gfortran -
