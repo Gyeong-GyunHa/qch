@@ -39,7 +39,8 @@ Note that the index must start from 1 (NOT ZERO)
 The local quad clustering coefficient vector
 
 ### Example
-![nondirected_example](https://github.com/Gyeong-GyunHa/qch/assets/25861047/90c27861-4d82-45ce-a8a5-ea58b1c77875)
+![nondirected_example](https://github.com/Gyeong-GyunHa/qch/assets/25861047/a79881c5-c4ca-4d00-8ae3-e174860652f6)
+
 
 
 
