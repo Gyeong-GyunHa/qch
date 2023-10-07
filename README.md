@@ -12,17 +12,17 @@ The code has only been tested and compiled with Apple clang version 14.0.0 (GNU 
 ```zsh
 > git clone https://github.com/Gyeong-GyunHa/qch
 > cd qch
-> gfortran -
+> gfortran nondir_quadclustering.f90
 ```
 
 If you want to compute it with parallel computation using openmp environment, you can compile it using following command:
 ```zsh
-> gfortran -
+> gfortran -fopenmp nondir_quadclustering.f90
 ```
 
 Once the application has been compiled you can run it using the following command:
 ```zsh
-> gfortran -
+> ./a.out
 ```
 
 In this code, all options are hardcoded.
