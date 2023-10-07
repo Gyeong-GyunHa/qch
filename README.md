@@ -28,7 +28,12 @@ Once the application has been compiled you can run it using the following comman
 In this code, all options are hardcoded.
 
 ### Input
-The incidence list of a hypergraph
+The incidence list of a hypergraph in whitespace-separated values format, with one connection information per line
+The meaning of the columns in sample_hypergraph.txt are:
+First column: Index of node 
+Second column: Index of hyperedge
+
+Note that the index must start from 1 (NOT ZERO)
 
 ### Output
 The local quad clustering coefficient vector
