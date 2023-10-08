@@ -15,7 +15,7 @@ The code has only been tested and compiled with Apple clang version 14.0.0 (GNU 
 > gfortran nondir_quadclustering.f90
 ```
 
-If you want to compute it with parallel computation using openmp environment, you can compile it using following command:
+If you want to compute it with parallel computation using openmp environment, you can compile it using the following command:
 ```zsh
 > gfortran -fopenmp nondir_quadclustering.f90
 ```
@@ -28,7 +28,7 @@ Once the application has been compiled you can run it using the following comman
 In this code, all options are hardcoded.
 
 ### Input
-The incidence list of a hypergraph in whitespace-separated values format, with one connection information per line
+The incidence list of a hypergraph with one connection information per line
 
 The meaning of the columns in *sample_hypergraph.txt* are:
 
@@ -51,7 +51,7 @@ Node 1: Node 1 is connected to hyperedges 1 and 2, and they have a common connec
 
 Node 3: Node 3 is connected to hyperedges 1, 2 and 3. There are 2 common neighbors 1 and 4 for the hyperedges 1 and 2, and 0 common neighbor for the hyperedges 2 and 3, and 1 common neighbor 2 for the hyperedges 1 and 3. Then we can compute the total number of quads centered on the node 3 is 3 (numerator of the quad clustering coefficient.) And the maximum possible number of quads centered on the node 3 is six (denominator): two each for hyperedges 1 and 2, hyperedges 2 and 3, and hyperedges 1 and 3. Therefore, the quad clustering coefficient is $`C^{\rm q}_{3}=\frac{1}{2}`$.
 
-We can get the same result using this code. Here is the result file *clustering_dist.txt*
+We can get the same result using this code. Here is the result file *quadclustering_dist.txt*
 
 >   1.00000000    
 >  0.500000000    
@@ -67,21 +67,33 @@ This indicates that the quad clustering coefficients for nodes 1, 2, 3, 4, and 5
 
 ### Usage
 ```zsh
-> gfortran -
+> git clone https://github.com/Gyeong-GyunHa/qch
+> cd qch
+> gfortran dir_quadclustering.f90
 ```
 
-This code also supports parallel computation using openmp environment.
+This code doesn't support parallel computation but has parallel computation in the preprocessing step before calculating the directed quad clustering coefficient.
+To use parallel computation, you can compile it with the following command:
 ```zsh
-> gfortran -
+> gfortran -fopenmp dir_quadclustering.f90
 ```
 
 Once the application has been compiled you can run it using the following command:
 ```zsh
-> gfortran -
+> ./a.out
 ```
 
 ### Input
-The incidence list of a directed hypergraph
+The incidence list of a directed hypergraph with one connection information per line
+
+The meaning of the columns in *dir_hyperg_sample.txt* are:
+
+- First column: Index of node 
+
+- Second column: Index of hyperedge
+
+- Third column: Direction information of the connection (1 denotes the direction from node to hyperedge, 2 indicates the direction from hyperedge to node)
+
 
 ### Output
 The local directed quad clustering coefficient vector
