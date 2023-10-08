@@ -42,6 +42,7 @@ Note that the index must start from 1 (NOT ZERO)
 The local quad clustering coefficient vector
 
 ### Example
+The sample data (*sample_hypergraph.txt*) is a hypergraph with five nodes and four hyperedges, as shown in the following figure.
 ![nondirected_example](https://github.com/Gyeong-GyunHa/qch/assets/25861047/a79881c5-c4ca-4d00-8ae3-e174860652f6)
 
 
