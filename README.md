@@ -51,6 +51,18 @@ Node 1: Node 1 is connected to hyperedges 1 and 2, and they have a common connec
 
 Node 3: Node 3 is connected to hyperedges 1, 2 and 3. There are 2 common neighbors 1 and 4 for the hyperedges 1 and 2, and 0 common neighbor for the hyperedges 2 and 3, and 1 common neighbor 2 for the hyperedges 1 and 3. Then we can compute the total number of quads centered on the node 3 is 3 (numerator of the quad clustering coefficient.) And the maximum possible number of quads centered on the node 3 is six (denominator): two each for hyperedges 1 and 2, hyperedges 2 and 3, and hyperedges 1 and 3. Therefore, the quad clustering coefficient for node 3 is $`\frac{1}{2}`$.
 
+We can get the same result using this code. Here is the result file clustering_dist.txt
+
+>   1.00000000    
+>  0.500000000    
+>  0.500000000    
+>  0.500000000    
+>   0.00000000    
+>
+
+This indicates that the quad clustering coefficients for nodes 1, 2, 3, 4, and 5 are 1, 1/2, 1/2, 1/2, and 0, respectively.
+
+
 ## The quad clustering coefficient in a directed hypergraph
 
 ### Usage
