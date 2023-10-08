@@ -72,7 +72,7 @@ This indicates that the quad clustering coefficients for nodes 1, 2, 3, 4, and 5
 > gfortran dir_quadclustering.f90
 ```
 
-This code doesn't support parallel computation but has parallel computation in the preprocessing step before calculating the directed quad clustering coefficient.
+This code doesn't support parallel computation for calculating the directed quad clustering coefficient but has parallel computation in the preprocessing step before calculating the coefficient.
 To use parallel computation, you can compile it with the following command:
 ```zsh
 > gfortran -fopenmp dir_quadclustering.f90
