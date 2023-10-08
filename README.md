@@ -92,7 +92,7 @@ The meaning of the columns in *dir_hyperg_sample.txt* are:
 
 - Second column: Index of hyperedge
 
-- Third column: Direction information of the connection (1 denotes the direction from node to hyperedge, 2 indicates the direction from hyperedge to node)
+- Third column: Direction information of the connection (1 denotes the direction from node to hyperedge, 2 indicates the direction from hyperedge to node. To represent a bidirectional connection, use two lines. - *See sample data*)
 
 
 ### Output
