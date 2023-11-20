@@ -101,7 +101,9 @@ The local directed quad clustering coefficient vector
 
 ## Reference
 
+> G.-G. Ha, I. Neri, & A. Annibale (2023). Clustering coefficients for networks with higher order interactions. arXiv preprint arXiv:2311.08563.
 
+Contact for inquiries about the code: gyeonggyun.ha_at_gmail.com
 Gyeong-Gyun Ha, KCL, 2023
 
 
